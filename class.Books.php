@@ -11,7 +11,7 @@ class Books{
 		}
 	}
 	
-	public function get_Monsters(){
+	public function get_Books(){
 		$sql = "SELECT * FROM tblbooks";
 		$result = mysqli_query($this->db,$sql);
 		while($row = mysqli_fetch_assoc($result)){
