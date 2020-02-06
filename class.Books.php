@@ -1,5 +1,5 @@
 <?php
-class Monsters{
+class Books{
 	public $db;
 	
 	public function __construct(){
@@ -12,7 +12,7 @@ class Monsters{
 	}
 	
 	public function get_Monsters(){
-		$sql = "SELECT * FROM tblmonsters";
+		$sql = "SELECT * FROM tblbooks";
 		$result = mysqli_query($this->db,$sql);
 		while($row = mysqli_fetch_assoc($result)){
 			$list[] = $row;
